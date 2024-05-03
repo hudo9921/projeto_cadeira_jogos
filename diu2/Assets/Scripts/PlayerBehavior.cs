@@ -63,7 +63,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void Atirar()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetMouseButtonDown(0))
             {
                 Debug.Log("tiro");
                 Instantiate(bulletPrefab,bulletSpawnPoint.position,bulletSpawnPoint.rotation);

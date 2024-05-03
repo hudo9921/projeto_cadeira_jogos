@@ -1,40 +1,67 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ZumbiSpawner : MonoBehaviour
 {
     public GameObject zumbi;
     public Transform[] spawnPoints;
+    public float initialSpawnInterval = 2f; 
+    public float timeToIncrementZombies = 60f;
+    public int initialZombiesToSpawn = 1; 
+    public int zombiesIncrementPerMinute = 1;
 
-    public float spawnTime;
+    private float timer;
+    private float incrementTimer;
+    private int zombiesToSpawn;
 
-    public float SpawnRadius;
-    // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnZumbis());
+        timer = 0f;
+        incrementTimer = 0f;
+        zombiesToSpawn = initialZombiesToSpawn;
+        StartCoroutine(SpawnZombiesRoutine());
     }
 
-    // Update is called once per frame
     void Update()
     {
         
-    }
-    IEnumerator SpawnZumbis()
-    {
-        while (true)
+        timer += Time.deltaTime;
+        incrementTimer += Time.deltaTime;
+
+        
+        if (incrementTimer >= timeToIncrementZombies)
         {
-            yield return new WaitForSeconds(spawnTime);
-
-            Transform spawnPoint = spawnPoints[Random.Range(0,spawnPoints.Length)];
-
-            Vector3 randomPosition = spawnPoint.position+(Random.insideUnitSphere*SpawnRadius);
-
-            randomPosition.z = 0f;
-
-            Instantiate(zumbi,randomPosition,spawnPoint.rotation);
+            zombiesToSpawn += zombiesIncrementPerMinute; 
+            incrementTimer = 0f;
         }
     }
 
+    IEnumerator SpawnZombiesRoutine()
+    {
+        while (true)
+        {
+            // Spawnar zombies
+            for (int i = 0; i < zombiesToSpawn; i++)
+            {
+                Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                Vector3 randomOffset = Random.insideUnitSphere * Random.Range(0f, 1f);
+                Vector3 spawnPosition = spawnPoint.position + randomOffset;
+
+                
+                GameObject newZombie = Instantiate(zumbi, spawnPosition, Quaternion.identity);
+
+               
+                Quaternion spawnRotation = Quaternion.Euler(spawnPoint.eulerAngles.x, spawnPoint.eulerAngles.y, 0f);
+
+                
+                newZombie.transform.rotation = spawnRotation;
+
+                
+                newZombie.transform.parent = spawnPoint;
+            }
+
+            
+            yield return new WaitForSeconds(initialSpawnInterval);
+        }
+    }
 }
