@@ -10,14 +10,14 @@ public class tiro : MonoBehaviour
 
     
     
-    // Start is called before the first frame update
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         rb.velocity=transform.right*velocidade;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         

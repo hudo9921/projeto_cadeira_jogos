@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target; // Reference to the transform of the object to follow
-    public float smoothSpeed = 0.125f; // Smoothing speed of camera movement
+    public Transform target; 
+    public float smoothSpeed = 0.125f;
 
-    public Vector3 offset; // Offset from the target's position (adjust if needed)
+    public Vector3 offset; 
 
     void LateUpdate()
     {

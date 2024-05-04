@@ -40,7 +40,7 @@ public class ZumbiSpawner : MonoBehaviour
     {
         while (true)
         {
-            // Spawnar zombies
+            
             for (int i = 0; i < zombiesToSpawn; i++)
             {
                 Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];

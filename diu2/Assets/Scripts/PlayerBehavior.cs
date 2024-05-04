@@ -58,39 +58,39 @@ void Movimento()
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        // Calculate movement vector
+        
         Vector3 movement = new Vector3(horizontalInput, verticalInput, 0f);
         Vector3 newPosition = transform.position + movement * Time.deltaTime * moveSpeed;
 
-        // Get the minimum and maximum X and Y values from the GameObject positions
+        
         float minX = minXObject.transform.position.x;
         float maxX = maxXObject.transform.position.x;
         float minY = minYObject.transform.position.y;
         float maxY = maxYObject.transform.position.y;
 
-        // Clamp the new position to stay within the movement bounds
+        
         newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
         newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
 
-        // Move the player to the clamped position
+        
         transform.position = newPosition;
 
-        // Rotate the character based on input direction
-        if (horizontalInput > 0f) // Moving right
+        
+        if (horizontalInput > 0f) 
         {
             ani.SetTrigger("Andando");
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
-        else if (horizontalInput < 0f) // Moving left
+        else if (horizontalInput < 0f) 
         {
             ani.SetTrigger("Andando");
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
-        else if (verticalInput != 0f) // Moving up or down
+        else if (verticalInput != 0f) 
         {
             ani.SetTrigger("Andando");
         }
-        else // Not moving
+        else 
         {
             ani.SetTrigger("Parado");
         }
@@ -115,9 +115,9 @@ void Dash()
 
         collider.enabled=false;
 
-        Vector3 dashDirection = -transform.right; // Dash in the opposite direction of the player's facing
+        Vector3 dashDirection = -transform.right; 
 
-        // Move the character's position to dash in the desired direction
+        
         transform.position += dashDirection * dashSpeed;
 
         isDashing = true;

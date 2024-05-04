@@ -22,14 +22,14 @@ public class Zumbi : MonoBehaviour
         scoreUpdater = FindObjectOfType<ScoreUpdater>();
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         Vector2 direction = (player.position-transform.position).normalized;
 
         float gameTime = GameManager.GameTime;
 
-        // Scale velocity based on game time
+        
         velocidade = initialVelocidade + gameTime * fatorDificuldade; 
         //Debug.Log(velocidade);
 
@@ -50,7 +50,7 @@ public class Zumbi : MonoBehaviour
         {
             if (scoreUpdater != null)
             {
-                // Increment the score by 10
+                
                 scoreUpdater.IncrementScore(50);
             }
             else
@@ -64,7 +64,7 @@ public class Zumbi : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Restart the game
+            
             SceneManager.LoadScene("JogoOver");
         }
     }
