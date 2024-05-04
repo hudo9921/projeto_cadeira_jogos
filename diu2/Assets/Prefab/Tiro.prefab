@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4543055881089275476}
   - component: {fileID: 4427591965850259271}
   - component: {fileID: 6978472715347875919}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tiro
   m_TagString: Untagged
   m_Icon: {fileID: 0}

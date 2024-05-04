@@ -10,12 +10,16 @@ public class Zumbi : MonoBehaviour
     private Transform player;
 
     public float fatorDificuldade=0.1f;
-    // Start is called before the first frame update
+    
+
+    private ScoreUpdater scoreUpdater;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         velocidade = initialVelocidade;
         player = GameObject.FindWithTag("Player").transform;
+
+        scoreUpdater = FindObjectOfType<ScoreUpdater>();
     }
 
     // Update is called once per frame
@@ -44,6 +48,15 @@ public class Zumbi : MonoBehaviour
         vida -= dano;
         if (vida <= 0)
         {
+            if (scoreUpdater != null)
+            {
+                // Increment the score by 10
+                scoreUpdater.IncrementScore(50);
+            }
+            else
+            {
+                Debug.LogWarning("ScoreUpdater reference is null. Make sure it is assigned in the inspector or exists in the scene.");
+            }
             Destroy(gameObject);
         }
     }
@@ -52,7 +65,7 @@ public class Zumbi : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Restart the game
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("JogoOver");
         }
     }
 }

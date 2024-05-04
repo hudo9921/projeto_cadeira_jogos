@@ -7,6 +7,8 @@ public class tiro : MonoBehaviour
     public float velocidade;
     public float dano;
     private Rigidbody2D rb;
+
+    
     
     // Start is called before the first frame update
     void Start()
