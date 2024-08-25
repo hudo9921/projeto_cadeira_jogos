@@ -8,8 +8,12 @@ public class GameOverMenuScript : MonoBehaviour
         SceneManager.LoadScene("JogoMain");
     }
 
-    public void CloseGame()
+    public void ReturnMenu()
     {
         SceneManager.LoadScene("JogoStart");
+        Time.timeScale = 1f;
+    }
+    public void CloseGame(){
+        Application.Quit();
     }
 }

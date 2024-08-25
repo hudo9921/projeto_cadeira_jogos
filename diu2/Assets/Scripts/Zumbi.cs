@@ -65,7 +65,7 @@ public class Zumbi : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             
-            SceneManager.LoadScene("JogoOver");
+            SceneManager.LoadScene("CutSceneLose");
         }
     }
 }

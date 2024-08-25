@@ -5,6 +5,6 @@ public class StartButtonScript : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("JogoMain");
+        SceneManager.LoadScene("CutSceneStart");
     }
 }
