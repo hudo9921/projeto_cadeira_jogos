@@ -6,10 +6,10 @@ using UnityEngine;
 public class PlayerBehavior : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float dashSpeed=10;
-    public float dashDuration=0.5f;
-    public float dashStaminaCost = 10f; 
-    public float staminaRecoveryRate = 5f; 
+    public float dashSpeed = 10;
+    public float dashDuration = 0.5f;
+    public float dashStaminaCost = 10f;
+    public float staminaRecoveryRate = 5f;
     public float minStaminaRecoveryRate = 1f;
     public float staminaDecreaseFactor = 0.1f;
 
@@ -30,7 +30,7 @@ public class PlayerBehavior : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
 
-    public bool isDashing=false;
+    public bool isDashing = false;
 
 
     void Start()
@@ -39,7 +39,7 @@ public class PlayerBehavior : MonoBehaviour
         ani = GetComponent<Animator>();
         collider = GetComponent<Collider2D>();
         dashBar = GameObject.FindWithTag("StaminaBar");
-        currentStamina=100f;
+        currentStamina = 100f;
         UpdateStaminaBar();
         StartStaminaRecovery();
 
@@ -48,49 +48,50 @@ public class PlayerBehavior : MonoBehaviour
     {
         Movimento();
         Atirar();
-        if(Input.GetKeyDown(KeyCode.Space)&& currentStamina>=dashStaminaCost){
+        if (Input.GetKeyDown(KeyCode.Space) && currentStamina >= dashStaminaCost)
+        {
             Dash();
             Debug.Log("Dashando");
         }
     }
-void Movimento()
+    void Movimento()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        
+
         Vector3 movement = new Vector3(horizontalInput, verticalInput, 0f);
         Vector3 newPosition = transform.position + movement * Time.deltaTime * moveSpeed;
 
-        
+
         float minX = minXObject.transform.position.x;
         float maxX = maxXObject.transform.position.x;
         float minY = minYObject.transform.position.y;
         float maxY = maxYObject.transform.position.y;
 
-        
+
         newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
         newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
 
-        
+
         transform.position = newPosition;
 
-        
-        if (horizontalInput > 0f) 
+
+        if (horizontalInput > 0f)
         {
             ani.SetTrigger("Andando");
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
-        else if (horizontalInput < 0f) 
+        else if (horizontalInput < 0f)
         {
             ani.SetTrigger("Andando");
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
-        else if (verticalInput != 0f) 
+        else if (verticalInput != 0f)
         {
             ani.SetTrigger("Andando");
         }
-        else 
+        else
         {
             ani.SetTrigger("Parado");
         }
@@ -98,45 +99,45 @@ void Movimento()
 
     void Atirar()
     {
-        if(Input.GetMouseButtonDown(0))
-            {
-                Instantiate(bulletPrefab,bulletSpawnPoint.position,bulletSpawnPoint.rotation);
-                
-                ani.SetTrigger("Atirando");
-            }   
+        if (Input.GetMouseButtonDown(0))
+        {
+            Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+
+            ani.SetTrigger("Atirando");
+        }
     }
 
-void Dash()
-{
-    if (!isDashing && currentStamina >= dashStaminaCost)
+    void Dash()
     {
-        currentStamina -= dashStaminaCost;
-        UpdateStaminaBar();
+        if (!isDashing && currentStamina >= dashStaminaCost)
+        {
+            currentStamina -= dashStaminaCost;
+            UpdateStaminaBar();
 
-        collider.enabled=false;
+            collider.enabled = false;
 
-        Vector3 dashDirection = -transform.right; 
+            Vector3 dashDirection = -transform.right;
 
-        
-        transform.position += dashDirection * dashSpeed;
 
-        isDashing = true;
+            transform.position += dashDirection * dashSpeed;
 
-        Invoke("EnableCollider", dashDuration);
+            isDashing = true;
+
+            Invoke("EnableCollider", dashDuration);
+        }
     }
-}
-    
+
     void EnableCollider()
     {
-        collider.enabled=true;
+        collider.enabled = true;
 
-        isDashing=false;
+        isDashing = false;
     }
-        void UpdateStaminaBar()
+    void UpdateStaminaBar()
     {
-        
+
         Vector3 newScale = dashBar.transform.localScale;
-        newScale.y = currentStamina / 100f; 
+        newScale.y = currentStamina / 100f;
         dashBar.transform.localScale = newScale;
     }
 
@@ -155,12 +156,12 @@ void Dash()
         {
             yield return new WaitForSeconds(1f);
 
-            
+
             currentStamina += staminaRecoveryRate;
             currentStamina = Mathf.Clamp(currentStamina, 0f, 100f);
             UpdateStaminaBar();
 
-            
+
             staminaRecoveryRate -= staminaDecreaseFactor * Time.deltaTime;
             staminaRecoveryRate = Mathf.Max(staminaRecoveryRate, minStaminaRecoveryRate);
         }
