@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;  // To manage scenes
 
 public class PlayerBehavior : MonoBehaviour
 {
@@ -13,12 +13,11 @@ public class PlayerBehavior : MonoBehaviour
     public float minStaminaRecoveryRate = 1f;
     public float staminaDecreaseFactor = 0.1f;
 
-    //limitadores
+    // Limiters
     public GameObject minXObject;
     public GameObject maxXObject;
     public GameObject minYObject;
     public GameObject maxYObject;
-
 
     private Animator ani;
     private Rigidbody2D rigidbody;
@@ -34,6 +33,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public AudioSource gunShotSound;
 
+    // Life variable
+    public float life = 100f;
 
     void Start()
     {
@@ -44,40 +45,43 @@ public class PlayerBehavior : MonoBehaviour
         currentStamina = 100f;
         UpdateStaminaBar();
         StartStaminaRecovery();
-
     }
+
     void Update()
     {
         Movimento();
         Atirar();
+
         if (Input.GetKeyDown(KeyCode.Space) && currentStamina >= dashStaminaCost)
         {
             Dash();
             Debug.Log("Dashando");
         }
+
+        // Check if life is 0 or below, then load lose scene
+        if (life <= 0)
+        {
+            SceneManager.LoadScene("CutSceneLose");
+        }
     }
+
     void Movimento()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-
         Vector3 movement = new Vector3(horizontalInput, verticalInput, 0f);
         Vector3 newPosition = transform.position + movement * Time.deltaTime * moveSpeed;
-
 
         float minX = minXObject.transform.position.x;
         float maxX = maxXObject.transform.position.x;
         float minY = minYObject.transform.position.y;
         float maxY = maxYObject.transform.position.y;
 
-
         newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
         newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
 
-
         transform.position = newPosition;
-
 
         if (horizontalInput > 0f)
         {
@@ -104,9 +108,7 @@ public class PlayerBehavior : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-
             gunShotSound.Play();
-
             ani.SetTrigger("Atirando");
         }
     }
@@ -121,8 +123,6 @@ public class PlayerBehavior : MonoBehaviour
             collider.enabled = false;
 
             Vector3 dashDirection = -transform.right;
-
-
             transform.position += dashDirection * dashSpeed;
 
             isDashing = true;
@@ -134,12 +134,11 @@ public class PlayerBehavior : MonoBehaviour
     void EnableCollider()
     {
         collider.enabled = true;
-
         isDashing = false;
     }
+
     void UpdateStaminaBar()
     {
-
         Vector3 newScale = dashBar.transform.localScale;
         newScale.y = currentStamina / 100f;
         dashBar.transform.localScale = newScale;
@@ -159,15 +158,23 @@ public class PlayerBehavior : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1f);
-
-
             currentStamina += staminaRecoveryRate;
             currentStamina = Mathf.Clamp(currentStamina, 0f, 100f);
             UpdateStaminaBar();
 
-
             staminaRecoveryRate -= staminaDecreaseFactor * Time.deltaTime;
             staminaRecoveryRate = Mathf.Max(staminaRecoveryRate, minStaminaRecoveryRate);
+        }
+    }
+
+    // Call this function to reduce life
+    public void TakeDamage(float damage)
+    {
+        life -= damage;
+        Debug.Log("Player Life: " + life);
+        if (life <= 0)
+        {
+            SceneManager.LoadScene("CutSceneLose");
         }
     }
 }

@@ -15,9 +15,13 @@ public class Zumbi : MonoBehaviour
     public AudioSource audioSource;   // Reference to the AudioSource component
     public float minSoundInterval = 10f;  // Minimum interval between sounds
     public float maxSoundInterval = 15f;  // Maximum interval between sounds
+    public float damage = 20f;            // Damage dealt to the player
+    public float damageInterval = 1f;     // Interval between each damage tick (in seconds)
 
     private ScoreUpdater scoreUpdater;
     private bool isAlive = true;      // Flag to check if the zombie is alive
+    private bool isCollidingWithPlayer = false; // To track if zombie is colliding with the player
+    private Coroutine damageCoroutine;
 
     void Start()
     {
@@ -71,7 +75,40 @@ public class Zumbi : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("CutSceneLose");
+            // Start dealing damage if the player is in range
+            if (!isCollidingWithPlayer)
+            {
+                isCollidingWithPlayer = true;
+                damageCoroutine = StartCoroutine(DamagePlayerOverTime(other.GetComponent<PlayerBehavior>()));
+            }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Stop dealing damage when the player is out of range
+            if (isCollidingWithPlayer)
+            {
+                isCollidingWithPlayer = false;
+                if (damageCoroutine != null)
+                {
+                    StopCoroutine(damageCoroutine);
+                }
+            }
+        }
+    }
+
+    private IEnumerator DamagePlayerOverTime(PlayerBehavior playerBehavior)
+    {
+        while (isCollidingWithPlayer)
+        {
+            if (playerBehavior != null)
+            {
+                playerBehavior.TakeDamage(damage); // Deal damage
+            }
+            yield return new WaitForSeconds(damageInterval); // Wait for next damage tick
         }
     }
 
