@@ -29,12 +29,15 @@ public class PlayerBehavior : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
 
+    public HealthBarBehavior healthBar;
+
     public bool isDashing = false;
 
     public AudioSource gunShotSound;
 
     // Life variable
-    public float life = 100f;
+    public float life;
+    public float maxHealth = 100f;
 
     void Start()
     {
@@ -45,6 +48,9 @@ public class PlayerBehavior : MonoBehaviour
         currentStamina = 100f;
         UpdateStaminaBar();
         StartStaminaRecovery();
+
+        life = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     void Update()
@@ -171,6 +177,8 @@ public class PlayerBehavior : MonoBehaviour
     public void TakeDamage(float damage)
     {
         life -= damage;
+        healthBar.SetHealth(life);
+        
         Debug.Log("Player Life: " + life);
         if (life <= 0)
         {
