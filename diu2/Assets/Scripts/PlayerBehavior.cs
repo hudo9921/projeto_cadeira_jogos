@@ -32,6 +32,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public bool isDashing = false;
 
+    public AudioSource gunShotSound;
+
 
     void Start()
     {
@@ -102,6 +104,8 @@ public class PlayerBehavior : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+
+            gunShotSound.Play();
 
             ani.SetTrigger("Atirando");
         }
