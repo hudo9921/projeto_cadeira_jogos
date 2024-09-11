@@ -46,7 +46,7 @@ public class PlayerBehavior : MonoBehaviour
 
 
     public float munition;
-    public float maxMunition = 100f;
+    public float maxMunition = 45f;
 
     private bool canShoot = true;  // Controle de quando o player pode atirar
     public float pistolCooldown = 0.5f;  // Tempo de recarga para a pistola
@@ -130,6 +130,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void Atirar()
     {
+        bool hasAmmo = true;
         // Se o jogador não pode atirar, retorna
         if (!canShoot) return;
 
@@ -137,19 +138,31 @@ public class PlayerBehavior : MonoBehaviour
         if (weaponManager.currentWeapon.weaponID == WeaponManager.WeaponID.Pistol)
         {
             // Inicia o cooldown para a pistola
+            
             StartCoroutine(PistolCooldownRoutine());
         }
         else
         {
+
             // Gasta munição para armas que não são pistolas
-            munition -= 5;
-            ammunitionBar.SetAmmunition(munition);
+            if(munition<=0)
+            {
+                munition=0;
+                hasAmmo=false;
+            }
+            else{
+                munition -= 1;
+                ammunitionBar.SetAmmunition(munition);
+            }
         }
 
         // Atira a bala
-        Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        gunShotSound.Play();
-        ani.SetTrigger("Atirando");
+        if(hasAmmo){
+            Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            gunShotSound.Play();
+            ani.SetTrigger("Atirando");
+        }
+
     }
 
     void Dash()

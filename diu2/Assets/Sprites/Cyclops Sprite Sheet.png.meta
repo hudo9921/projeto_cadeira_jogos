@@ -1,0 +1,3515 @@
+fileFormatVersion: 2
+guid: 7d2b4e306782828429de2d45d595a338
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1216
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b905ce3cedbcd4faac257fff26f7f0
+      internalID: -1642877344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe06aabe80db69642bd80bddc8403bdf
+      internalID: 1659512053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff01b5f507e04cf49a21edd84a24d1cb
+      internalID: -1907101166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2f63768024327438fc99fec72b8984
+      internalID: -1814755705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1216
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265d264843381e1469c4907aef718bbf
+      internalID: -1138867554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1216
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad4768902ce8a84487a7a0970272b68
+      internalID: -83769369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b1503fdf67f9b4a9417be8855b6233
+      internalID: -1900195931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c636c049e3e594991cb2b7503ccd31
+      internalID: 963376776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1750bc6ef77f13488bf33ccb4ba2693
+      internalID: -257383141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1216
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45eda22346e93242851f2bb3ac34e13
+      internalID: 1300704761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1216
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd9ab931d35411409211faad0b7cf25
+      internalID: 315354667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc169784d62db54f934fd6f8b874a2a
+      internalID: 727794388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba0783a8c8f7434588230b88c6e50b2
+      internalID: -1637828842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 1216
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d1734385d4c16479d4780eb203dfb4
+      internalID: 110485579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1216
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c620817cbc0834b4bbb53c8b0e3033d9
+      internalID: 2039433040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1152
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9e70be8ef73aa42a9bdb948b5a6607
+      internalID: 1332128931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1152
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0f6cf2d63ea5c4eb996369f3a10022
+      internalID: 776688811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1152
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd3a520e4ffe0944be357f576d80781
+      internalID: 792515183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1152
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4045c3c8fa00a4844a85253f2e2786ea
+      internalID: 938808797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1152
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce29540f8f11484e83fe97c6fc91223
+      internalID: 1247103653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1152
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba361138d7678444a619caa0e61c790
+      internalID: 42891572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1152
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87275eb18d818e49bf6a138b63dea68
+      internalID: 1553979809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 1152
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9a214aa1b961a409c1cce26be43bca
+      internalID: -1347958833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1152
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9b8a9e5dcea754ea10cb80aa08da3b
+      internalID: -1478285849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1152
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c5a803f7caa5a4bb955a7c5b43fd62
+      internalID: -1530644617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1152
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c991fc70faeab84a992df4b823933e0
+      internalID: 606904275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1152
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0db3e0b1d6b7f04289e82d7477e1a57
+      internalID: 743184657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1088
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6c946578ff93e4594356b80dbfd44e
+      internalID: 1059303489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1088
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eff467b24a14a49af7a08f9850ae59
+      internalID: -1785700762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1088
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18753f863dac42e4fa2c0a3e42bc80a0
+      internalID: 173135729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1088
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2fe2dca648243408a361ea6d4e5cea
+      internalID: 1983012254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1088
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3325dbeee7d91d3468be06f8271dcdd7
+      internalID: 1019144389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1088
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd7779e520cbf049b845afd5a932aa3
+      internalID: 834112163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1088
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cc91ebf62ce0f41a9f22320dc8edd0
+      internalID: -1357832396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1024
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c2716f24849a241a839d2d71f6f4fb
+      internalID: -1952490020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1024
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb924a93e8c054743b6cc727b8a5a60d
+      internalID: -1960214924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1024
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940efee416b9d97469fe913fbbad0479
+      internalID: 1515302417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1024
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d658b3c05c19c8143814720267d3251c
+      internalID: -2122123611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1024
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f132dbd3f3fb44b42b92899bcaf8a876
+      internalID: -1364307302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1024
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fdffc36be4e364c86eb2116227ec0f
+      internalID: 82371121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1024
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8928a3091dda43e41a1d9d55d95cc617
+      internalID: 1734260601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1024
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6033269e318b20040ae972dfc57eba0f
+      internalID: -485282791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1024
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79a1f4ae5f1791498dfac4549b308da
+      internalID: 261956105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1024
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86419161189af5438832e829cabf7ae
+      internalID: 773233745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1024
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68219eb692f7a3e4c9969e132e8e9f72
+      internalID: -109702375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 1024
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d4122607876934ca0662efc23c5c5b
+      internalID: 249671759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 1024
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7398ecc0250ad468972c77f5b4dacb
+      internalID: 1342449819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 960
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911f0932fcba9c5449b18b36738d9fb1
+      internalID: -1218968023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 960
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90901438e1d35d04f970f2e032f196a2
+      internalID: -393366765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 960
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef59f2db2b537b4a88f61de58d5f4a6
+      internalID: 1408473418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 896
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be920a981d55394f90c2619c08b9649
+      internalID: -2038604239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 896
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fa090e209c3744195fd167cfe01560
+      internalID: 1720201022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 896
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2ef87be24713d448efc09e339db953
+      internalID: 1142229265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 896
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b68f4c325ddaf54c899655ab9da0653
+      internalID: 4790783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 896
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa321b0dd1982d84189100124f4b27ab
+      internalID: 11047678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 832
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be4cfdd4be0f3f4d83f98dccfcb3324
+      internalID: 512058656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 832
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c12922391013641843e37c912bea44
+      internalID: 249411084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 832
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b7fb0774cd4bc4d9c4e152d7eeb781
+      internalID: -1204303040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 832
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30536226299d2074ea38de987c408715
+      internalID: -1008215212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 832
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f8f0ee1ee717945b300472c5b8e553
+      internalID: 1592523534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 832
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e692b64179093aa4fbb87a148d88d909
+      internalID: 152270930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 832
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc41cefa8e623b4b8082513013572ee
+      internalID: 1869892550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 832
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75928d0c805eaa41b2bf1811f968512
+      internalID: -180614452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 832
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3baefcc8a71d13459957f4ae5a1c83b
+      internalID: 2078224796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 768
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537e65a77a5f8a344b54ceb7816bd3f1
+      internalID: 1597502522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 768
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8baffe701dcd63478061bbe48971a57
+      internalID: 608505204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 768
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120d5786659c7b2499f326e2d2f8a928
+      internalID: 1160356547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 768
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a54cd5fb1ced514cbe0c5cdc8e5495c
+      internalID: -57971517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 666
+        width: 24
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421bc00339efe9a4d96a4847dadd1ea6
+      internalID: 1162195043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 669
+        width: 25
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9511b0467dd9e544393b664adc00dc03
+      internalID: -723628888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 704
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725c0505ae4fcfb428314918c2ae3d68
+      internalID: -1127281793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 704
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060106fa4544f054887bb17dd48a2704
+      internalID: 1497539313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 704
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160b2645f50572240a074f802a24e408
+      internalID: -795401600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 704
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5869dabdc2d2af548be8029c92ddeb09
+      internalID: -143362220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 666
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7efcbd1e698a5a48b8aa5d3dcb02872
+      internalID: 110706135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 664
+        width: 99
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ee33bf3a1e32f4baccaa5fd571653c
+      internalID: -2098555475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 665
+        width: 35
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231eeab4fb956f94fa5e4173a48e0a7a
+      internalID: 1605691724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 576
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d658e817f48cd4b40b661f0c05949d0a
+      internalID: -971249290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 576
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf93075fa1458d4c843bbf34a678f8a
+      internalID: 627230839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 576
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bd97e081d7ee14dabeb2a97ed23777
+      internalID: 1709139860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 576
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41197152687485f479aa220ff8f2032a
+      internalID: 1399267750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 576
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff66cdeb34855d479a41c55af867d5f
+      internalID: 1756246372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 576
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3235bbf48fe332b4f9498ca4d0be1337
+      internalID: 1920348849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 576
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83f9f8b96dcccc438f2006ee4653b6d
+      internalID: -746053838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 576
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5ce579ee6694247b31e6d7648c52be
+      internalID: -1158071598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 576
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c7fed5a8f8d674c9dd25fa64cdb41d
+      internalID: 1438806224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 576
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00565b767c489bc4084df20e8c48849c
+      internalID: 1974039063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 576
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5953c69d947124fa4c17512a6fe758
+      internalID: 1536483480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 576
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15864b484cf2ef44598279b45915de1b
+      internalID: -1213332795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 576
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c4e58388b58a34380adb5aab73066a
+      internalID: 1393877893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 576
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a51af57b09ef384f8800247a20cbdec
+      internalID: -1720661498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 576
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af9b70393041f24396d358536bae247
+      internalID: -975706680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 512
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc08585a62fb47f4ba694fb7e7f50213
+      internalID: 963539260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 512
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c4acd02a647954697b0cb49c9783a3
+      internalID: -1551442009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 512
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8626bbb8a0e99047ae0d1db3bd2a5a5
+      internalID: -1157590242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 512
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35f50628c0ebd348b5e9e03551e12f0
+      internalID: 2096830871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 512
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d1588f47649d844b9b1aeff6c390a1
+      internalID: -1889708273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 512
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be7f72c476cca54889346451da49f82
+      internalID: 1126717202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 512
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677024a1674c41843a6eb3cf4e304bca
+      internalID: 1739159211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 512
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91850f36b8e4d0b459195fa358aa4d08
+      internalID: -1716620286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 512
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e204426dfa4b6a342b0b84411b901a94
+      internalID: 1128298138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 512
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d93486afaeccb4092f6472b3910145
+      internalID: -1012580616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 512
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f3db94d4da20e4e91389992359c462
+      internalID: -1482301390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 512
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171a07e2cb567c74eac89c3a77264d4f
+      internalID: -704787536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 448
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637ef44fb201068479a4f0b9d12f8373
+      internalID: -878954285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 448
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb0fd55feaaf1846a4f0867e4bd3ddd
+      internalID: 1319745208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 448
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa650ff8dec14947a9f644f79e11b51
+      internalID: 1452909235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 448
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd6005e281c928408938da743095ccf
+      internalID: -583159989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 448
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fdab8bc446245849857e2bf223268ca
+      internalID: -425192544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 448
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a26ab4b1b41f74bba4e9bec3c3faf8
+      internalID: 1565032718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 448
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0932e4d693c18134f95902aff1b5baec
+      internalID: 1687921885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 384
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98195615c2ae374fbb4e5eaa41c1d17
+      internalID: 373869134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 384
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20084898e9a99fa499cff87056558423
+      internalID: -37872724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 384
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae11c1a499d9be449bafcb091ff889a
+      internalID: 2147063542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 384
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c51f5a9bb908c4fbf1a410e71cd26c
+      internalID: -218262220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 384
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0253f5d2b217040b86ce0f2e0c7749
+      internalID: 1250315059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 384
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172d6308663508d48887eaef06339a94
+      internalID: -1632483765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 384
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6838df27c38afb84b98b9e77b1a4258d
+      internalID: 1526517510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 384
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf8dce7892a4cd478af4394bc251f45
+      internalID: -1420492697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 384
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41191a16a25409f488d8cef1c543e378
+      internalID: -1755238118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 384
+        width: 24
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6654c2bda4b4ab544b4ba07aa768dcff
+      internalID: 265871706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 384
+        width: 25
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88664a5f41526b849adc6c71452627c8
+      internalID: 1239997685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 384
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2430ebcbcc38f4e8fd27b3988a6769
+      internalID: 1542309298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 384
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733897b72c4c809468d8a4d172329100
+      internalID: 962463472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 320
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685a752e7863d7f40b7dcdc58d70e7aa
+      internalID: -1777561191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 320
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70341e770965247409abc640a0527354
+      internalID: 1468239833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 320
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc674e03bbd33149881cf02eddf4232
+      internalID: 685160813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 256
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6b01663c6b9f14a9fff8714d089e60
+      internalID: 1054947912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 256
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1d9e84df947894ea36692539759638
+      internalID: -83916959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 256
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51e2fc51dad2244991aa87bddb1708a
+      internalID: -768147648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 256
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4149ac9de280e044b3a2ea3f7204128
+      internalID: 345963338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 256
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638dcce8d4f82044ab4f015259750e1e
+      internalID: -257280356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 192
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8dca4e7b4779ea48840e04caf1305a3
+      internalID: 973632688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 115d8706ddb767041a9cac9e36a1cb87
+      internalID: 1078107214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 192
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5775ed51f909c694ea35d06c90e8c4c1
+      internalID: 1279961425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80049d2c1d0ec7b4bafecd461798d618
+      internalID: 1298407559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 192
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37f6f9603dcc6d40ac4a3c0b75f1a87
+      internalID: 760029639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 192
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f081ceb435a8c43b8aae67da7d1451
+      internalID: -1526220215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 192
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69720fbafca13d8408eb73fc498a1c45
+      internalID: -587026323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 192
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538abd3a10253504582ed25f2ee87c07
+      internalID: -983726829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_140
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 192
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d0e9eea84fb6b44a6d6028c6ecef1d
+      internalID: 154721784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_141
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 128
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f9800bc11b42e4582f5acca33fbd98
+      internalID: -104927621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_142
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 128
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eda28243d7aec841930c078d832254f
+      internalID: 1716789187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_143
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14cbc0be1331e44c852d0bdd8095ddf
+      internalID: -256849623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_144
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 128
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4773dec4cb7df4a818086d73d864ad
+      internalID: 435122441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_145
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 26
+        width: 24
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2292666d5be14224f8e63163984d9ff6
+      internalID: -675943211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_146
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 29
+        width: 25
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1108b39db847f3498ba292b53e22e69
+      internalID: 1151748710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_147
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 64
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6e8533156a87546a217f83ef9ab4ee
+      internalID: -1769966514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_148
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 26
+        width: 73
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4a4179967b8d1488b78281e0869cbd
+      internalID: -263811667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_149
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 64
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cf1b947a20f9e40a483370a2e80234
+      internalID: 2115659753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_150
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 24
+        width: 35
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a05ca95971a60144801f7812f57430d
+      internalID: -1665331350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_151
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 64
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e17767cf2e78843afab81f64f7c90b
+      internalID: -1935141056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_152
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 25
+        width: 35
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2ac470df25d76489523551976ad7c0
+      internalID: 180705984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_153
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 25
+        width: 144
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7de908db2a6e164d858f8bced4fb56a
+      internalID: 1461667883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cyclops Sprite Sheet_0: -1642877344
+      Cyclops Sprite Sheet_1: 1659512053
+      Cyclops Sprite Sheet_10: 315354667
+      Cyclops Sprite Sheet_100: 1128298138
+      Cyclops Sprite Sheet_101: -1012580616
+      Cyclops Sprite Sheet_102: -1482301390
+      Cyclops Sprite Sheet_103: -704787536
+      Cyclops Sprite Sheet_104: -878954285
+      Cyclops Sprite Sheet_105: 1319745208
+      Cyclops Sprite Sheet_106: 1452909235
+      Cyclops Sprite Sheet_107: -583159989
+      Cyclops Sprite Sheet_108: -425192544
+      Cyclops Sprite Sheet_109: 1565032718
+      Cyclops Sprite Sheet_11: 727794388
+      Cyclops Sprite Sheet_110: 1687921885
+      Cyclops Sprite Sheet_111: 373869134
+      Cyclops Sprite Sheet_112: -37872724
+      Cyclops Sprite Sheet_113: 2147063542
+      Cyclops Sprite Sheet_114: -218262220
+      Cyclops Sprite Sheet_115: 1250315059
+      Cyclops Sprite Sheet_116: -1632483765
+      Cyclops Sprite Sheet_117: 1526517510
+      Cyclops Sprite Sheet_118: -1420492697
+      Cyclops Sprite Sheet_119: -1755238118
+      Cyclops Sprite Sheet_12: -1637828842
+      Cyclops Sprite Sheet_120: 265871706
+      Cyclops Sprite Sheet_121: 1239997685
+      Cyclops Sprite Sheet_122: 1542309298
+      Cyclops Sprite Sheet_123: 962463472
+      Cyclops Sprite Sheet_124: -1777561191
+      Cyclops Sprite Sheet_125: 1468239833
+      Cyclops Sprite Sheet_126: 685160813
+      Cyclops Sprite Sheet_127: 1054947912
+      Cyclops Sprite Sheet_128: -83916959
+      Cyclops Sprite Sheet_129: -768147648
+      Cyclops Sprite Sheet_13: 110485579
+      Cyclops Sprite Sheet_130: 345963338
+      Cyclops Sprite Sheet_131: -257280356
+      Cyclops Sprite Sheet_132: 973632688
+      Cyclops Sprite Sheet_133: 1078107214
+      Cyclops Sprite Sheet_134: 1279961425
+      Cyclops Sprite Sheet_135: 1298407559
+      Cyclops Sprite Sheet_136: 760029639
+      Cyclops Sprite Sheet_137: -1526220215
+      Cyclops Sprite Sheet_138: -587026323
+      Cyclops Sprite Sheet_139: -983726829
+      Cyclops Sprite Sheet_14: 2039433040
+      Cyclops Sprite Sheet_140: 154721784
+      Cyclops Sprite Sheet_141: -104927621
+      Cyclops Sprite Sheet_142: 1716789187
+      Cyclops Sprite Sheet_143: -256849623
+      Cyclops Sprite Sheet_144: 435122441
+      Cyclops Sprite Sheet_145: -675943211
+      Cyclops Sprite Sheet_146: 1151748710
+      Cyclops Sprite Sheet_147: -1769966514
+      Cyclops Sprite Sheet_148: -263811667
+      Cyclops Sprite Sheet_149: 2115659753
+      Cyclops Sprite Sheet_15: 1332128931
+      Cyclops Sprite Sheet_150: -1665331350
+      Cyclops Sprite Sheet_151: -1935141056
+      Cyclops Sprite Sheet_152: 180705984
+      Cyclops Sprite Sheet_153: 1461667883
+      Cyclops Sprite Sheet_16: 776688811
+      Cyclops Sprite Sheet_17: 792515183
+      Cyclops Sprite Sheet_18: 938808797
+      Cyclops Sprite Sheet_19: 1247103653
+      Cyclops Sprite Sheet_2: -1907101166
+      Cyclops Sprite Sheet_20: 42891572
+      Cyclops Sprite Sheet_21: 1553979809
+      Cyclops Sprite Sheet_22: -1347958833
+      Cyclops Sprite Sheet_23: -1478285849
+      Cyclops Sprite Sheet_24: -1530644617
+      Cyclops Sprite Sheet_25: 606904275
+      Cyclops Sprite Sheet_26: 743184657
+      Cyclops Sprite Sheet_27: 1059303489
+      Cyclops Sprite Sheet_28: -1785700762
+      Cyclops Sprite Sheet_29: 173135729
+      Cyclops Sprite Sheet_3: -1814755705
+      Cyclops Sprite Sheet_30: 1983012254
+      Cyclops Sprite Sheet_31: 1019144389
+      Cyclops Sprite Sheet_32: 834112163
+      Cyclops Sprite Sheet_33: -1357832396
+      Cyclops Sprite Sheet_34: -1952490020
+      Cyclops Sprite Sheet_35: -1960214924
+      Cyclops Sprite Sheet_36: 1515302417
+      Cyclops Sprite Sheet_37: -2122123611
+      Cyclops Sprite Sheet_38: -1364307302
+      Cyclops Sprite Sheet_39: 82371121
+      Cyclops Sprite Sheet_4: -1138867554
+      Cyclops Sprite Sheet_40: 1734260601
+      Cyclops Sprite Sheet_41: -485282791
+      Cyclops Sprite Sheet_42: 261956105
+      Cyclops Sprite Sheet_43: 773233745
+      Cyclops Sprite Sheet_44: -109702375
+      Cyclops Sprite Sheet_45: 249671759
+      Cyclops Sprite Sheet_46: 1342449819
+      Cyclops Sprite Sheet_47: -1218968023
+      Cyclops Sprite Sheet_48: -393366765
+      Cyclops Sprite Sheet_49: 1408473418
+      Cyclops Sprite Sheet_5: -83769369
+      Cyclops Sprite Sheet_50: -2038604239
+      Cyclops Sprite Sheet_51: 1720201022
+      Cyclops Sprite Sheet_52: 1142229265
+      Cyclops Sprite Sheet_53: 4790783
+      Cyclops Sprite Sheet_54: 11047678
+      Cyclops Sprite Sheet_55: 512058656
+      Cyclops Sprite Sheet_56: 249411084
+      Cyclops Sprite Sheet_57: -1204303040
+      Cyclops Sprite Sheet_58: -1008215212
+      Cyclops Sprite Sheet_59: 1592523534
+      Cyclops Sprite Sheet_6: -1900195931
+      Cyclops Sprite Sheet_60: 152270930
+      Cyclops Sprite Sheet_61: 1869892550
+      Cyclops Sprite Sheet_62: -180614452
+      Cyclops Sprite Sheet_63: 2078224796
+      Cyclops Sprite Sheet_64: 1597502522
+      Cyclops Sprite Sheet_65: 608505204
+      Cyclops Sprite Sheet_66: 1160356547
+      Cyclops Sprite Sheet_67: -57971517
+      Cyclops Sprite Sheet_68: 1162195043
+      Cyclops Sprite Sheet_69: -723628888
+      Cyclops Sprite Sheet_7: 963376776
+      Cyclops Sprite Sheet_70: -1127281793
+      Cyclops Sprite Sheet_71: 1497539313
+      Cyclops Sprite Sheet_72: -795401600
+      Cyclops Sprite Sheet_73: -143362220
+      Cyclops Sprite Sheet_74: 110706135
+      Cyclops Sprite Sheet_75: -2098555475
+      Cyclops Sprite Sheet_76: 1605691724
+      Cyclops Sprite Sheet_77: -971249290
+      Cyclops Sprite Sheet_78: 627230839
+      Cyclops Sprite Sheet_79: 1709139860
+      Cyclops Sprite Sheet_8: -257383141
+      Cyclops Sprite Sheet_80: 1399267750
+      Cyclops Sprite Sheet_81: 1756246372
+      Cyclops Sprite Sheet_82: 1920348849
+      Cyclops Sprite Sheet_83: -746053838
+      Cyclops Sprite Sheet_84: -1158071598
+      Cyclops Sprite Sheet_85: 1438806224
+      Cyclops Sprite Sheet_86: 1974039063
+      Cyclops Sprite Sheet_87: 1536483480
+      Cyclops Sprite Sheet_88: -1213332795
+      Cyclops Sprite Sheet_89: 1393877893
+      Cyclops Sprite Sheet_9: 1300704761
+      Cyclops Sprite Sheet_90: -1720661498
+      Cyclops Sprite Sheet_91: -975706680
+      Cyclops Sprite Sheet_92: 963539260
+      Cyclops Sprite Sheet_93: -1551442009
+      Cyclops Sprite Sheet_94: -1157590242
+      Cyclops Sprite Sheet_95: 2096830871
+      Cyclops Sprite Sheet_96: -1889708273
+      Cyclops Sprite Sheet_97: 1126717202
+      Cyclops Sprite Sheet_98: 1739159211
+      Cyclops Sprite Sheet_99: -1716620286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

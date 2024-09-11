@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AmmoBehavior : MonoBehaviour
 {
-    public int ammoAmount = 10;
+    public int ammoAmount = 20;
 
     private void OnTriggerEnter2D(Collider2D collision) 
     {

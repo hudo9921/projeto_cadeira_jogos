@@ -181,7 +181,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1610430699275633399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,8 +206,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 21ce0f61d234ebb4f8b487e250db0ca1, type: 3}
   - {fileID: 8300000, guid: ba6832373cd843f49884262a42a2c44b, type: 3}
   audioSource: {fileID: 2319592714184484532}
-  minSoundInterval: 10
-  maxSoundInterval: 15
+  minSoundInterval: 4
+  maxSoundInterval: 6
+  damage: 20
+  damageInterval: 1
 --- !u!1 &6862961753577207653
 GameObject:
   m_ObjectHideFlags: 0
