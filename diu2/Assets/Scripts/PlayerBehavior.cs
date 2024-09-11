@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;  // To manage scenes
 public class PlayerBehavior : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float sprintSpeed = 0f;
     public float dashSpeed = 10;
     public float dashDuration = 0.5f;
     public float dashStaminaCost = 10f;
@@ -47,6 +48,9 @@ public class PlayerBehavior : MonoBehaviour
     public float munition;
     public float maxMunition = 100f;
 
+    private bool canShoot = true;  // Controle de quando o player pode atirar
+    public float pistolCooldown = 0.5f;  // Tempo de recarga para a pistola
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -67,7 +71,11 @@ public class PlayerBehavior : MonoBehaviour
     void Update()
     {
         Movimento();
-        Atirar();
+        
+        if (Input.GetMouseButtonDown(0))
+        {
+            Atirar();
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && currentStamina >= dashStaminaCost)
         {
@@ -122,18 +130,26 @@ public class PlayerBehavior : MonoBehaviour
 
     void Atirar()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (weaponManager.currentWeapon.weaponID != WeaponManager.WeaponID.Pistol)
-            {
-                munition -= 1;
-                ammunitionBar.SetAmmunition(munition);
-            }
+        // Se o jogador não pode atirar, retorna
+        if (!canShoot) return;
 
-            Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            gunShotSound.Play();
-            ani.SetTrigger("Atirando");
+        // Verifica se a arma atual é uma pistola
+        if (weaponManager.currentWeapon.weaponID == WeaponManager.WeaponID.Pistol)
+        {
+            // Inicia o cooldown para a pistola
+            StartCoroutine(PistolCooldownRoutine());
         }
+        else
+        {
+            // Gasta munição para armas que não são pistolas
+            munition -= 5;
+            ammunitionBar.SetAmmunition(munition);
+        }
+
+        // Atira a bala
+        Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        gunShotSound.Play();
+        ani.SetTrigger("Atirando");
     }
 
     void Dash()
@@ -188,6 +204,14 @@ public class PlayerBehavior : MonoBehaviour
             staminaRecoveryRate -= staminaDecreaseFactor * Time.deltaTime;
             staminaRecoveryRate = Mathf.Max(staminaRecoveryRate, minStaminaRecoveryRate);
         }
+    }
+
+    // Corrotina para controlar o cooldown da pistola
+    IEnumerator PistolCooldownRoutine()
+    {
+        canShoot = false;  // Bloqueia o tiro
+        yield return new WaitForSeconds(pistolCooldown);  // Espera o tempo de recarga
+        canShoot = true;  // Libera o tiro novamente
     }
 
     // Call this function to reduce life
