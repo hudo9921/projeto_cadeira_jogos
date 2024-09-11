@@ -197,4 +197,16 @@ public class PlayerBehavior : MonoBehaviour
             SceneManager.LoadScene("CutSceneLose");
         }
     }
+
+    public void AddAmmo(int amount)
+    {
+        munition += amount;
+        ammunitionBar.SetAmmunition(munition);
+    }
+
+    public void AddHealth(int health)
+    {
+        life += health;
+        healthBar.SetHealth(life);
+    }
 }
