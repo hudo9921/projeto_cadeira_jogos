@@ -33,6 +33,6 @@ public class ScoreUpdater : MonoBehaviour
         currentScore += amount;
 
         
-        scoreText.text = "Score: " + currentScore;
+        // scoreText.text = "Score: " + currentScore;
     }
 }
