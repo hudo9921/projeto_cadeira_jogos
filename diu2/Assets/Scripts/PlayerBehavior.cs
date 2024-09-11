@@ -33,6 +33,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public AmmunitionBarBehavior ammunitionBar;
 
+    public WeaponManager weaponManager;
+
     public bool isDashing = false;
 
     public AudioSource gunShotSound;
@@ -122,8 +124,11 @@ public class PlayerBehavior : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            munition -= 10;
-            ammunitionBar.SetAmmunition(munition);
+            if (weaponManager.currentWeapon.weaponID != WeaponManager.WeaponID.Pistol)
+            {
+                munition -= 1;
+                ammunitionBar.SetAmmunition(munition);
+            }
 
             Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             gunShotSound.Play();
@@ -201,7 +206,10 @@ public class PlayerBehavior : MonoBehaviour
     public void AddAmmo(int amount)
     {
         munition += amount;
-        ammunitionBar.SetAmmunition(munition);
+
+        if (weaponManager.currentWeapon.weaponID != WeaponManager.WeaponID.Pistol) {
+            ammunitionBar.SetAmmunition(munition);
+        }
     }
 
     public void AddHealth(int health)
