@@ -31,6 +31,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public HealthBarBehavior healthBar;
 
+    public AmmunitionBarBehavior ammunitionBar;
+
     public bool isDashing = false;
 
     public AudioSource gunShotSound;
@@ -38,6 +40,10 @@ public class PlayerBehavior : MonoBehaviour
     // Life variable
     public float life;
     public float maxHealth = 100f;
+
+
+    public float munition;
+    public float maxMunition = 100f;
 
     void Start()
     {
@@ -51,6 +57,9 @@ public class PlayerBehavior : MonoBehaviour
 
         life = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        munition = maxMunition;
+        ammunitionBar.SetMaxAmmunition(maxMunition);
     }
 
     void Update()
@@ -113,6 +122,9 @@ public class PlayerBehavior : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            munition -= 10;
+            ammunitionBar.SetAmmunition(munition);
+
             Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             gunShotSound.Play();
             ani.SetTrigger("Atirando");
@@ -178,7 +190,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         life -= damage;
         healthBar.SetHealth(life);
-        
+
         Debug.Log("Player Life: " + life);
         if (life <= 0)
         {
