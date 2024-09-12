@@ -12,7 +12,7 @@ public class AmmunitionBarBehavior : MonoBehaviour
 	public void SetMaxAmmunition(float ammunition)
 	{
 		slider.maxValue = ammunition;
-		slider.value = ammunition;
+		slider.value = PlayerPrefs.GetFloat("Ammo",ammunition);
 
 		fill.color = gradient.Evaluate(1f);
 	}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7496389363840334581}
   - component: {fileID: 1221318440737936441}
   - component: {fileID: 416157102038421874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Zumbi Grande
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -165,7 +165,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -193,13 +193,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745940b14b94d444f880a125939ab76b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 80
+  vida: 160
   initialVelocidade: 1.5
   fatorDificuldade: 0.01
   zombieSounds: []
   audioSource: {fileID: 0}
   minSoundInterval: 10
   maxSoundInterval: 15
-  damage: 20
+  damage: 40
   damageInterval: 1
+  followPlayer: 0
   minDistance: 15

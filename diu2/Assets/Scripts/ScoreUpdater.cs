@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ScoreUpdater : MonoBehaviour
 {
@@ -9,8 +10,13 @@ public class ScoreUpdater : MonoBehaviour
 
     private int currentScore;
 
+    public string proximaFase;
+
+    private PlayerBehavior player;
+
     void Start()
     {
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerBehavior>();
         currentScore = zombies.transform.childCount;
         remainingText.text = "Restam: " + currentScore + " Zumbis";
     }
@@ -31,8 +37,10 @@ public class ScoreUpdater : MonoBehaviour
         if (currentScore == 0)
         {
             Debug.Log("PROXIMA FASE");
+            PlayerPrefs.SetFloat("Ammo",player.munition);
+            PlayerPrefs.SetFloat("Health",player.life);
+            SceneManager.LoadScene(proximaFase);
 
-            // TODO call proxima fase
         }
     }
 }

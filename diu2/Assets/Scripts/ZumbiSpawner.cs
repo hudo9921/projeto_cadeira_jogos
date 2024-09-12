@@ -8,7 +8,7 @@ public class ZumbiSpawner : MonoBehaviour
     public float initialSpawnInterval = 2f; 
     public float timeToIncrementZombies = 60f;
     public int initialZombiesToSpawn = 1; 
-    public int zombiesIncrementPerMinute = 1;
+    public int zombiesIncrementPerMinute = 0;
 
     private float timer;
     private float incrementTimer;
@@ -58,6 +58,8 @@ public class ZumbiSpawner : MonoBehaviour
 
                 
                 newZombie.transform.parent = spawnPoint;
+
+                newZombie.GetComponent<Zumbi>().followPlayer=true;
             }
 
             

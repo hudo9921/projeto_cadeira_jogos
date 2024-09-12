@@ -22,7 +22,7 @@ public class Zumbi : MonoBehaviour
     private bool isAlive = true;      // Flag to check if the zombie is alive
     private bool isCollidingWithPlayer = false; // To track if zombie is colliding with the player
     private Coroutine damageCoroutine;
-    private bool followPlayer;
+    public bool followPlayer;
     public float minDistance = 7f;
 
     void Start()
@@ -141,6 +141,7 @@ public class Zumbi : MonoBehaviour
         {
             int randomIndex = Random.Range(0, zombieSounds.Length);
             audioSource.clip = zombieSounds[randomIndex];
+            audioSource.volume = 0.01f;
             audioSource.Play();
         }
     }

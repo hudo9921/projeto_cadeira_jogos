@@ -13,7 +13,7 @@ public class BossBehavior : MonoBehaviour
     public float laserDuration = 0.5f; // Duração em segundos que o laser fica ativo
     public Animator bossAnimator; // Animator do boss para a animação de disparo
     public float fireRate = 2f; // Tempo entre os ataques
-    public int bossHealth = 5000; // Vida do boss
+    public int bossHealth = 3200; // Vida do boss
     public int laserDamage = 10; // Dano causado pelo laser
     public float damageInterval = 1f; // Intervalo entre os danos causados pelo laser
 
@@ -22,6 +22,13 @@ public class BossBehavior : MonoBehaviour
     private bool isAttacking = false;
     private bool isTakingDamage = false;
     private Coroutine damageCoroutine; // Para armazenar a corrotina de dano ao jogador
+
+    public HealthBarBehavior healthBar;
+
+    void Start(){
+
+        healthBar.SetMaxHealth(bossHealth);
+    }
 
     void Update()
     {
@@ -143,6 +150,7 @@ public class BossBehavior : MonoBehaviour
         if (bossHealth > 0)
         {
             bossHealth -= damage;
+            healthBar.SetHealth(bossHealth);
 
             // Ativa a animação de "Apanhando"
             bossAnimator.SetTrigger("Apanhando");
@@ -189,7 +197,7 @@ public class BossBehavior : MonoBehaviour
         if (collision.CompareTag("Tiro"))
         {
             // Aplica dano ao boss
-            TakeDamage(10); // Ajuste o valor do dano conforme necessário
+            TakeDamage(20); // Ajuste o valor do dano conforme necessário
         }
     }
 

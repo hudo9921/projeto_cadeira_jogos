@@ -281,7 +281,7 @@ MonoBehaviour:
   laserDuration: 0.5
   bossAnimator: {fileID: 1220933776519831545}
   fireRate: 2
-  bossHealth: 100
+  bossHealth: 3200
   laserDamage: 10
   damageInterval: 1
 --- !u!4 &7907842442314427708 stripped

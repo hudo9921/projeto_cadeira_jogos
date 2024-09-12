@@ -40,7 +40,7 @@ public class PlayerBehavior : MonoBehaviour
 
 
     public float munition;
-    public float maxMunition = 45f;
+    public float maxMunition = 45;
 
     private bool canShoot = true;  // Controle de quando o player pode atirar
     public float pistolCooldown = 0.5f;  // Tempo de recarga para a pistola
@@ -55,10 +55,12 @@ public class PlayerBehavior : MonoBehaviour
         UpdateStaminaBar();
         StartStaminaRecovery();
 
-        life = maxHealth;
+        life = PlayerPrefs.GetFloat("Health",maxHealth);
         healthBar.SetMaxHealth(maxHealth);
+        Debug.Log(life);
 
-        munition = maxMunition;
+        munition = PlayerPrefs.GetFloat("Ammo",maxMunition);
+        Debug.Log(munition);
         ammunitionBar.SetMaxAmmunition(maxMunition);
     }
 
@@ -139,6 +141,7 @@ public class PlayerBehavior : MonoBehaviour
             else
             {
                 munition -= 1;
+                Debug.Log(munition);
                 ammunitionBar.SetAmmunition(munition);
             }
         }
@@ -230,7 +233,12 @@ public class PlayerBehavior : MonoBehaviour
 
     public void AddAmmo(int amount)
     {
-        munition += amount;
+        
+        if(munition+amount>maxMunition){
+            munition=maxMunition;
+        }else{
+            munition += amount;
+        }
 
         if (weaponManager.currentWeapon.weaponID != WeaponManager.WeaponID.Pistol)
         {
@@ -240,7 +248,12 @@ public class PlayerBehavior : MonoBehaviour
 
     public void AddHealth(int health)
     {
-        life += health;
+        if(life+health>maxHealth){
+            life=maxHealth;
+        }else{
+            life += health;
+        }
+        
         healthBar.SetHealth(life);
     }
 }

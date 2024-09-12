@@ -5,11 +5,13 @@ public class GameOverMenuScript : MonoBehaviour
 {
     public void ReturnToMainGame()
     {
-        SceneManager.LoadScene("JogoMain");
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("Fase 1");
     }
 
     public void ReturnMenu()
     {
+        
         SceneManager.LoadScene("JogoStart");
         Time.timeScale = 1f;
     }
