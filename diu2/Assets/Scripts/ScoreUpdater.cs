@@ -4,35 +4,35 @@ using System.Collections;
 
 public class ScoreUpdater : MonoBehaviour
 {
-    public TMP_Text scoreText;
-    public float scoreIncreaseRate = 1f; 
+    public TMP_Text remainingText;
+    public GameObject zombies;
 
-    private int currentScore = 0;
+    private int currentScore;
 
     void Start()
     {
-        
-        StartCoroutine(UpdateScore());
+        currentScore = zombies.transform.childCount;
+        remainingText.text = "Restam: " + currentScore + " Zumbis";
     }
 
-    IEnumerator UpdateScore()
+
+    public void ReduceScore(int amount = 1)
     {
-        while (true)
+        currentScore -= amount;
+        if (currentScore == 1)
         {
-            
-            yield return new WaitForSeconds(1f / scoreIncreaseRate);
-            
-            
-            IncrementScore();
+            remainingText.text = "Resta: " + currentScore + " Zumbi";
         }
-    }
+        else
+        {
+            remainingText.text = "Restam: " + currentScore + " Zumbis";
+        }
 
-    
-    public void IncrementScore(int amount = 1)
-    {
-        currentScore += amount;
+        if (currentScore == 0)
+        {
+            Debug.Log("PROXIMA FASE");
 
-        
-        // scoreText.text = "Score: " + currentScore;
+            // TODO call proxima fase
+        }
     }
 }

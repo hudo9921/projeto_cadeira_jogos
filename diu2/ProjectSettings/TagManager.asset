@@ -7,6 +7,7 @@ TagManager:
   - Inimigo
   - Tiro
   - StaminaBar
+  - detection
   layers:
   - Default
   - TransparentFX

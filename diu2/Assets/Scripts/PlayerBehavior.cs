@@ -14,12 +14,6 @@ public class PlayerBehavior : MonoBehaviour
     public float minStaminaRecoveryRate = 1f;
     public float staminaDecreaseFactor = 0.1f;
 
-    // Limiters
-    public GameObject minXObject;
-    public GameObject maxXObject;
-    public GameObject minYObject;
-    public GameObject maxYObject;
-
     private Animator ani;
     private Rigidbody2D rigidbody;
     private Collider2D collider;
@@ -71,7 +65,7 @@ public class PlayerBehavior : MonoBehaviour
     void Update()
     {
         Movimento();
-        
+
         if (Input.GetMouseButtonDown(0))
         {
             Atirar();
@@ -97,14 +91,6 @@ public class PlayerBehavior : MonoBehaviour
 
         Vector3 movement = new Vector3(horizontalInput, verticalInput, 0f);
         Vector3 newPosition = transform.position + movement * Time.deltaTime * moveSpeed;
-
-        float minX = minXObject.transform.position.x;
-        float maxX = maxXObject.transform.position.x;
-        float minY = minYObject.transform.position.y;
-        float maxY = maxYObject.transform.position.y;
-
-        newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
-        newPosition.y = Mathf.Clamp(newPosition.y, minY, maxY);
 
         transform.position = newPosition;
 
@@ -138,26 +124,28 @@ public class PlayerBehavior : MonoBehaviour
         if (weaponManager.currentWeapon.weaponID == WeaponManager.WeaponID.Pistol)
         {
             // Inicia o cooldown para a pistola
-            
+
             StartCoroutine(PistolCooldownRoutine());
         }
         else
         {
 
             // Gasta munição para armas que não são pistolas
-            if(munition<=0)
+            if (munition <= 0)
             {
-                munition=0;
-                hasAmmo=false;
+                munition = 0;
+                hasAmmo = false;
             }
-            else{
+            else
+            {
                 munition -= 1;
                 ammunitionBar.SetAmmunition(munition);
             }
         }
 
         // Atira a bala
-        if(hasAmmo){
+        if (hasAmmo)
+        {
             Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             gunShotSound.Play();
             ani.SetTrigger("Atirando");
@@ -244,7 +232,8 @@ public class PlayerBehavior : MonoBehaviour
     {
         munition += amount;
 
-        if (weaponManager.currentWeapon.weaponID != WeaponManager.WeaponID.Pistol) {
+        if (weaponManager.currentWeapon.weaponID != WeaponManager.WeaponID.Pistol)
+        {
             ammunitionBar.SetAmmunition(munition);
         }
     }

@@ -202,3 +202,4 @@ MonoBehaviour:
   maxSoundInterval: 15
   damage: 20
   damageInterval: 1
+  minDistance: 15

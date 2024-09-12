@@ -22,6 +22,8 @@ public class Zumbi : MonoBehaviour
     private bool isAlive = true;      // Flag to check if the zombie is alive
     private bool isCollidingWithPlayer = false; // To track if zombie is colliding with the player
     private Coroutine damageCoroutine;
+    private bool followPlayer;
+    public float minDistance = 7f;
 
     void Start()
     {
@@ -38,19 +40,30 @@ public class Zumbi : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 direction = (player.position - transform.position).normalized;
-        float gameTime = GameManager.GameTime;
-
-        velocidade = initialVelocidade + gameTime * fatorDificuldade;
-
-        if (velocidade >= 10.0f)
+        if (followPlayer)
         {
-            rb.velocity = direction * 10.0f;
-            Debug.Log("Chegou no cap");
+            Vector2 direction = (player.position - transform.position).normalized;
+            float gameTime = GameManager.GameTime;
+
+            velocidade = initialVelocidade + gameTime * fatorDificuldade;
+
+            if (velocidade >= 10.0f)
+            {
+                rb.velocity = direction * 10.0f;
+                Debug.Log("Chegou no cap");
+            }
+            else
+            {
+                rb.velocity = direction * velocidade;
+            }
         }
         else
         {
-            rb.velocity = direction * velocidade;
+            float distance = Vector2.Distance(player.position, transform.position);
+            if (distance < minDistance)
+            {
+                followPlayer = true;
+            }
         }
     }
 
@@ -61,7 +74,7 @@ public class Zumbi : MonoBehaviour
         {
             if (scoreUpdater != null)
             {
-                scoreUpdater.IncrementScore(50);
+                scoreUpdater.ReduceScore();
             }
             else
             {

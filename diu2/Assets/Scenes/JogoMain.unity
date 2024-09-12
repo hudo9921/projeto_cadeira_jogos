@@ -6130,7 +6130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1067254064
 Transform:
   m_ObjectHideFlags: 0
@@ -6599,6 +6599,10 @@ PrefabInstance:
     - target: {fileID: 1998434549455051801, guid: 8b824bc49d124fb44a7355717c0da77c, type: 3}
       propertyPath: m_Name
       value: Zumbi Grande
+      objectReference: {fileID: 0}
+    - target: {fileID: 1998434549455051801, guid: 8b824bc49d124fb44a7355717c0da77c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7496389363840334581, guid: 8b824bc49d124fb44a7355717c0da77c, type: 3}
       propertyPath: m_Constraints
@@ -7690,7 +7694,7 @@ Transform:
   m_GameObject: {fileID: 1909695446}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 28.4, y: 0.09, z: 0}
+  m_LocalPosition: {x: 23.33, y: -0.35, z: 0}
   m_LocalScale: {x: 1, y: 9.216039, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7969,7 +7973,7 @@ Transform:
   m_GameObject: {fileID: 2087877789}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.3, y: 0.09, z: 0}
+  m_LocalPosition: {x: -18.63, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 9.216039, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -96639,6 +96643,10 @@ PrefabInstance:
     - target: {fileID: 6941091846763251033, guid: a7197048a3d6122459c64c2e870e0cad, type: 3}
       propertyPath: m_Name
       value: minion
+      objectReference: {fileID: 0}
+    - target: {fileID: 6941091846763251033, guid: a7197048a3d6122459c64c2e870e0cad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7907842442314427708, guid: a7197048a3d6122459c64c2e870e0cad, type: 3}
       propertyPath: m_LocalPosition.x

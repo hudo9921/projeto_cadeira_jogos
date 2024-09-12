@@ -195,8 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 40
-  initialVelocidade: 4
-  fatorDificuldade: 0.1
+  initialVelocidade: 6
+  fatorDificuldade: 0.00001
   zombieSounds:
   - {fileID: 8300000, guid: c9c8cf5de73aaf04db60abdf2dc0edea, type: 3}
   - {fileID: 8300000, guid: 380571d61556bb047bed67898a953307, type: 3}
@@ -210,6 +210,7 @@ MonoBehaviour:
   maxSoundInterval: 6
   damage: 20
   damageInterval: 1
+  minDistance: 10
 --- !u!1 &6862961753577207653
 GameObject:
   m_ObjectHideFlags: 0
